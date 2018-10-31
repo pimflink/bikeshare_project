@@ -14,4 +14,5 @@ README.md
 
 ### Credits
 Udacity
+Richard Kalehoff for actually teaching how to post my repo on Git Hub
 
