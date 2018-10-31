@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+Created on 31/10/2018
 
 ### Project Title
-Replace the Project Title
+bikeshare_project
 
 ### Description
-Describe what your project is about and what it does
+The project is a first attempt to work with Python.
+Whereby the python code enables the user to dig into the data from a bycycle rental company based in the US.
 
 ### Files used
-Include the files used
+bikeshare.py
+README.md
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity
 
