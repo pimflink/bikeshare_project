@@ -150,20 +150,20 @@ def trip_duration_stats(df):
     """ Calc trip time from seconds to hours, minutes and seconds """
     hours = int(trip_time_sec/3600)
     minutes = int((trip_time_sec - (hours*3600))/60)
-    seconds = trip_time_sec - hours * 3600 - minutes * 60
-    message = "\nTotal trip time over this period is {} hours, minutes {} and {} seconds."
+    seconds = int((trip_time_sec - (hours * 3600) - (minutes * 60)))
+    message = "\nTotal trip time over this period is {} hours, {} minutes and {} seconds."
     print(message.format(hours, minutes, seconds))
 
     """ Average travel time """
-    avg_trip_time_sec = df['Trip Duration'].mean()
+    avg_time_sec = df['Trip Duration'].mean()
 
     """ Calc average trip time from seconds to hours, minutes and seconds """
-    hours = int(avg_trip_time_sec/3600)
-    minutes = int((avg_trip_time_sec - (hours*3600))/60)
-    seconds = int(avg_trip_time_sec - hours * 3600 - minutes * 60)
-    message = "\nTotal trip time over this period is {} hours, minutes {} and {} seconds."
+    hours = int(avg_time_sec/3600)
+    minutes = int((avg_time_sec - (hours*3600))/60)
+    seconds = int((avg_time_sec - (hours * 3600) - (minutes * 60)))
+    message = "\nAverage trip time over this period is {} hours, {} minutes and {} seconds."
     print(message.format(hours, minutes, seconds))
-
+                 
     print('-'*40)
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
